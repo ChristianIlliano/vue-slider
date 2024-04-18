@@ -77,6 +77,10 @@ createApp ({
     } else {
       this.activeIndex--;
     }
+  },
+
+  showImages: function(index) {
+    this.activeIndex = index
   }
-  }
+  },
 }).mount('#my-carousel')
