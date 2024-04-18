@@ -81,6 +81,16 @@ createApp ({
 
   showImages: function(index) {
     this.activeIndex = index
-  }
   },
+
+  },
+  created() {
+
+    activeIndex: 0,
+
+      setInterval(() => {
+      this.showNext()
+      }, 3000);
+    },
+  
 }).mount('#my-carousel')
